@@ -297,7 +297,7 @@ p  {
 
 }
 
-@media handheld{
+@media (orientation:portrait){
     p  {
     font-size: x-large;
 
@@ -395,5 +395,4 @@ p  {
     margin-top: 2vw;
     width: 22.2vw;
 }
-
 }
