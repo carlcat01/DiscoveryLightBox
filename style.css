@@ -87,20 +87,33 @@ body {
     width: 10%;
     height: 4vw;
     float: left;
+    border-radius: 0px;
     font-size: x-large;
+    border-width: 0.5%;
+    margin-left: 0.5%;
+    border-color: #1B1B1B;
 }
+.switch:hover {
+    background-color: #760000;
+}
+
 
 #submit {
     float: right;
     width: 10%;
     height: 4vw;
+    background-color: #00AA00;
+    border-width: 0.5%;
+    border-color: #0E0E0E;
+    font-size: large;
 }
 
 #count-container {
     width: 26%;
     float: right;
-    font-size: xx-large;
     margin-left: 4%;
+    font-size: large;
+    margin-bottom: 5vw;
 }
 #control-container {
     width: 70%;
@@ -110,4 +123,26 @@ body {
 
 .switch.active {
     background-color: #00AA00;
+}
+.switch.active:hover {
+    background-color: #005F00;
+}
+#title {
+}
+#counter div {
+    color: #A20000;
+    float: left;
+    margin-top: -22px;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    width: 40%;
+    clear: left;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#counter p {
+    float: left;
+    width: 60%;
 }

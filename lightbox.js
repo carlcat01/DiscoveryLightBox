@@ -22,7 +22,7 @@ function toggle(value){
         but.innerHTML="0"
         curVal-=value;
     }
-    document.getElementById("counter").innerHTML="Current #: "+curVal;
+    document.getElementById("counter").innerHTML="<p>Current #: </p><div>"+curVal+"</div>";
     checkstate();
 }
 
