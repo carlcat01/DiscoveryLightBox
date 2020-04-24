@@ -37,12 +37,12 @@ function checkstate(){
         case 0:
             document.getElementById("statecount").innerHTML="Select Column";
             cCol=curVal;
-            pointer+=1*cCol;
+            pointer=1*cCol;
             break;
         case 1:
             document.getElementById("statecount").innerHTML="Select Row";
             cRow=curVal;
-            pointer+=18*cRow;
+            pointer+=(18*(cRow));
             
             break;
         case 2:
