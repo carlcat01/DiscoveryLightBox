@@ -100,10 +100,13 @@ function checkstate(){
             cBlu=0;
             pointer=400;
             
-            //var y = document.getElementsByClassName("switch");
-            //for(var i = 0;i <y.length; i++){
-            //    y[i].classList.remove("active");
-            //}
+            var y = document.getElementsByClassName("switch");
+            for(var i = 0;i <y.length; i++){
+                if(y[i].classList.contains("active")){
+                    y[i].classList.remove("active");
+                    y[i].innerHTML="0";
+            }
+            }
             
             state = -1;
             break;

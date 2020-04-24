@@ -97,6 +97,30 @@ body {
     z-index: 10;
     opacity: 0.5;
 }
+.info-container #copyright {
+    float: left;
+    width: 50%;
+}
+.info-container #host {
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+.info-container #host a {
+    color: #A20000;
+    text-align: right;
+}
+
+.info-container {
+    float: left;
+    clear: both;
+    color: #B1B1B1;
+    width: 80%;
+    margin-left: 10%;
+}
+
+
+
 
 
 
