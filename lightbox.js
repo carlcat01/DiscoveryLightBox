@@ -9,6 +9,12 @@ var cRed = 0;
 var cGre = 0;
 var cBlu = 0;
 
+function startup(){
+    document.getElementById("colSel").style.display = "none";
+    document.getElementById("rowSel").style.display = "none";
+    
+}
+
 function toggle(value){
    //var but = document.getElementById("but");
     var but = document.getElementById("but"+value.toString());
@@ -36,16 +42,38 @@ function checkstate(){
     switch(state){
         case 0:
             document.getElementById("statecount").innerHTML="Select Column";
+            
+            
+            
             cCol=curVal;
             pointer=1*cCol;
+            
+            if(cCol < 18){
+            document.getElementById("colSel").style.display = "block";
+            lightCol(cCol);
+            }
+            else{
+                document.getElementById("colSel").style.display = "none";
+            }
             break;
         case 1:
+            document.getElementById("colSel").style.display = "none";
+            
             document.getElementById("statecount").innerHTML="Select Row";
             cRow=curVal;
             pointer+=(18*(cRow));
             
+            if(cRow < 18){
+            document.getElementById("rowSel").style.display = "block";
+            lightRow(curVal);
+            }
+            else{
+                document.getElementById("rowSel").style.display = "none";
+            }
+            
             break;
         case 2:
+            document.getElementById("rowSel").style.display = "none";
             document.getElementById("statecount").innerHTML="Select Red";
             cRed = curVal;
             break;
@@ -85,4 +113,18 @@ function checkstate(){
     x = document.getElementsByClassName("pix");
     x[pointer].style.backgroundColor="rgb("+cRed+","+cGre+","+cBlu+")";
     }
+}
+
+function lightCol(colnum){
+    var offset = 5.5;
+    
+    document.getElementById("colSel").style.marginLeft = (offset * colnum)+"%";
+    
+    document.getElementById("rowSel").style.marginLeft = (offset * colnum)+"%";
+}
+
+function lightRow(rownum){
+    var offset = 5.5;
+    
+    document.getElementById("rowSel").style.marginTop = (offset * rownum)+"%";
 }

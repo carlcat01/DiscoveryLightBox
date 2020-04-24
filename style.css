@@ -1,9 +1,10 @@
-#grid div {
+#grid .pix {
     width: 5%;
     height: 5%;
     margin: 0.25%;
     float: left;
     background-color: #000000;
+    z-index: 1;
 }
 .grid-container {
     width: 60vw;
@@ -78,8 +79,26 @@ body {
 }
 #title h2 {
     color: #A20000;
-    font-size: x-large;
+    font-size: 359%;
+    margin-bottom: -1.5vw;
 }
+#colSel {
+    width: 5.5%;
+    height: 100%;
+    background-color: #FFFFFF;
+    margin-top: -0.5%;
+    z-index: 10;
+    opacity: 0.5;
+}
+#rowSel {
+    width: 5.5%;
+    height: 5.5%;
+    background-color: #FFFFFF;
+    z-index: 10;
+    opacity: 0.5;
+}
+
+
 
 
 .switch {
