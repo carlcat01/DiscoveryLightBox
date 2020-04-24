@@ -3,18 +3,96 @@
     height: 5%;
     margin: 0.25%;
     float: left;
-    background-color: #FFFFFF;
+    background-color: #000000;
 }
-#grid {
+.grid-container {
     width: 60vw;
-    height: 60vw;
-    background-color: #525252;
     display: block;
-    list-style-type: none;
-    list-style-position: inside;
+    height: 60vw;
+    float: left;
 
 }
+
+#grid {
+    background-color: #525252;
+    list-style-type: none;
+    list-style-position: inside;
+    height: 94%;
+    padding-top: 3%;
+    padding-right: 2%;
+    padding-left: 3%;
+    padding-bottom: 2%;
+    width: 94%;
+
+}
+body p {
+}
+#xlabel {
+    width: 60vw;
+    margin-left: 20vw;
+    padding-left: 3vw;
+    display: block;
+    float: left;
+    margin-top: -3vw;
+}
+#ylabel {
+    width: 5vw;
+    margin-left: 15vw;
+    float: left;
+    display: block;
+    text-align: right;
+    font-size: large;
+    margin-top: 3.5vw;
+    height: 60vw;
+}
+.ylab {
+    margin-top: 2%;
+    height: 5%;
+    margin-bottom: 0px;
+}
+
+
+.xlab {
+    width: 5%;
+    float: left;
+    line-height: normal;
+    font-size: large;
+    margin-left: 0.15%;
+    padding-left: 0px;
+    height: 5%;
+    margin-top: 1%;
+}
+
+
 body {
     padding: 0px;
     margin: 0px;
+}
+.switch {
+    background-color: #AA0000;
+    width: 10%;
+    height: 4vw;
+    float: left;
+    font-size: x-large;
+}
+
+#submit {
+    float: right;
+    width: 10%;
+    height: 4vw;
+}
+
+#count-container {
+    width: 20%;
+    float: right;
+    font-size: xx-large;
+}
+#control-container {
+    width: 70%;
+    float: left;
+}
+
+
+.switch.active {
+    background-color: #00AA00;
 }
