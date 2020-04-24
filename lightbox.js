@@ -61,7 +61,7 @@ function checkstate(){
             
             document.getElementById("statecount").innerHTML="Select Row";
             cRow=curVal;
-            pointer+=(18*(cRow));
+            pointer=(18*(cRow))+cCol;
             
             if(cRow < 18){
             document.getElementById("rowSel").style.display = "block";
@@ -109,6 +109,7 @@ function checkstate(){
             break;
             
     }
+    console.log("Pointer: "+pointer);
     if(pointer <= 324){
     x = document.getElementsByClassName("pix");
     x[pointer].style.backgroundColor="rgb("+cRed+","+cGre+","+cBlu+")";
