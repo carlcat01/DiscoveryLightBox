@@ -110,7 +110,8 @@ function checkstate(){
             cRed=0;
             cGre=0;
             cBlu=0;
-            pointer=400;
+            pointer=0;
+            curVal =0;
             
             var y = document.getElementsByClassName("switch");
             for(var i = 0;i <y.length; i++){
@@ -128,6 +129,10 @@ function checkstate(){
     if(pointer <= 324){
     x = document.getElementsByClassName("pix");
     x[pointer].style.backgroundColor="rgb("+cRed+","+cGre+","+cBlu+")";
+    }
+    else if (pointer >324){
+        console.log("Pointer Error.  Pointer too large, resetting to 0.")
+        pointer = 0;
     }
 }
 
